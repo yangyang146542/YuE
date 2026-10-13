@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== 小部件配色 ===== -->
+    <!-- 磨砂：半透明 -->
+    <color name="widget_bg_frosted">#B8FFFFFF</color>
+    <!-- Material 纯色：不透明容器色 -->
+    <color name="widget_bg_solid">#DDE1FF</color>
+
+    <color name="widget_text_primary">#1A1C1E</color>
+    <color name="widget_text_secondary">#5A5D63</color>
+    <!-- 纯色风格下的文字/图标色（在深色容器上用亮色） -->
+    <color name="widget_on_solid_primary">#00105C</color>
+    <color name="widget_on_solid_secondary">#3A4470</color>
+</resources>

@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">鱼额</string>
+    <string name="title">DeepSeek 余额查询</string>
+    <string name="subtitle">输入 API Key，查询账户余额</string>
+
+    <string name="hint_api_key">API Key</string>
+    <string name="label_provider">平台</string>
+    <string name="hint_api_key_for">%1$s 的 API Key</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_clear">清除</string>
+    <string name="btn_query">查询余额</string>
+
+    <string name="msg_key_empty">请先填写 API Key</string>
+    <string name="msg_key_saved">API Key 已保存到本机</string>
+    <string name="msg_key_cleared">API Key 已清除</string>
+
+    <string name="label_total">总余额</string>
+    <string name="label_granted">赠送余额：%1$s</string>
+    <string name="label_topped_up">充值余额：%1$s</string>
+    <string name="status_available">✓ 余额充足，可正常调用 API</string>
+    <string name="status_unavailable">⚠ 余额不足，API 调用可能失败</string>
+    <string name="no_balance_info">接口未返回余额信息</string>
+    <string name="value_placeholder">--</string>
+
+    <string name="label_history">历史 API Key（点击直接查询）</string>
+    <string name="btn_clear_history">清空历史记录</string>
+    <string name="msg_history_cleared">历史记录已清空</string>
+
+    <!-- ===== 桌面小部件 ===== -->
+    <string name="widget_label">DeepSeek 余额</string>
+    <string name="widget_action_refresh">手动更新</string>
+    <string name="widget_action_settings">设置</string>
+    <string name="widget_no_key">请在 App 的「小部件设置」里填写 API Key</string>
+    <string name="widget_refreshing">刷新中…</string>
+    <string name="widget_updated_at">%1$s 更新</string>
+    <string name="widget_update_failed">更新失败：%1$s</string>
+    <string name="widget_never_updated">尚未更新</string>
+
+    <string name="settings_title">小部件设置</string>
+    <string name="settings_api_key_label">API Key</string>
+    <string name="settings_interval_label">自动更新间隔</string>
+    <string name="settings_style_label">外观风格</string>
+    <string name="settings_saved">设置已保存</string>
+    <string name="btn_cancel">取消</string>
+
+    <string name="style_frosted">磨砂</string>
+    <string name="style_transparent">透明</string>
+    <string name="style_solid">Material 纯色</string>
+
+    <string name="settings_color_label">颜色</string>
+    <string name="target_bg">背景</string>
+    <string name="target_text">文字</string>
+    <string name="target_icon">图标</string>
+    <string name="target_border">边框</string>
+
+    <string name="source_role">系统 Material</string>
+    <string name="source_palette">调色板</string>
+    <string name="source_hex">色号</string>
+
+    <string name="hint_hex">#RRGGBB 或 #AARRGGBB</string>
+    <string name="btn_apply_hex">应用色号</string>
+    <string name="msg_invalid_hex">色号格式不正确，请用 #RRGGBB 或 #AARRGGBB</string>
+    <string name="label_alpha">透明度</string>
+    <string name="label_color_preview">当前颜色</string>
+
+    <string name="role_primary">主色</string>
+    <string name="role_on_primary">主色·前景</string>
+    <string name="role_primary_container">主容器</string>
+    <string name="role_on_primary_container">主容器·前景</string>
+    <string name="role_secondary">次色</string>
+    <string name="role_secondary_container">次容器</string>
+    <string name="role_tertiary">第三色</string>
+    <string name="role_tertiary_container">第三容器</string>
+    <string name="role_error">错误色</string>
+    <string name="role_surface">表面</string>
+    <string name="role_surface_variant">表面变体</string>
+    <string name="role_outline">轮廓</string>
+    <string name="role_on_surface">表面·前景</string>
+    <string name="role_on_surface_variant">表面变体·前景</string>
+
+    <string name="settings_corner_label">圆角大小</string>
+    <string name="settings_recharge_label">充值总量（用于计算已用金额）</string>
+    <string name="hint_recharge">例如 100</string>
+    <string name="label_used">已用金额</string>
+    <string name="widget_used">已用 %1$s</string>
+
+    <string name="settings_font_label">文字大小</string>
+
+    <!-- ===== 图片轮播 ===== -->
+    <string name="settings_carousel_label">图片轮播</string>
+    <string name="carousel_enable">启用图片轮播</string>
+    <string name="btn_pick_folder">选择文件夹</string>
+    <string name="folder_none">未选择文件夹</string>
+    <string name="folder_selected">已选：%1$s（%2$d 张图片）</string>
+    <string name="settings_scale_label">缩放方式</string>
+    <string name="settings_carousel_interval_label">轮播间隔（桌面基准的倍数）</string>
+    <string name="interval_estimate">≈ %1$s / 张</string>
+    <string name="interval_manual">手动切换</string>
+    <string name="carousel_tap_hint">提示：点击图片可随时手动切换，与自动轮播并存</string>
+    <string name="scale_crop">裁切</string>
+    <string name="scale_stretch">拉伸</string>
+    <string name="scale_fit">填充</string>
+    <string name="hint_box_right">右边界距离 dp</string>
+    <string name="hint_box_top">上边界距离 dp</string>
+    <string name="hint_box_w">宽 dp</string>
+    <string name="hint_box_h">高 dp</string>
+    <string name="hint_box_interval">轮播间隔（秒）</string>
+    <string name="hint_box_border">边框粗细 dp</string>
+    <string name="hint_box_corner">圆角 dp</string>
+    <string name="msg_no_folder">请先选择一个图片文件夹</string>
+    <string name="font_small">小</string>
+    <string name="font_default">默认</string>
+    <string name="font_large">大</string>
+    <string name="font_xlarge">特大</string>
+
+    <string name="interval_off">关闭</string>
+    <string name="interval_15m">15 分钟</string>
+    <string name="interval_30m">30 分钟</string>
+    <string name="interval_1h">1 小时</string>
+    <string name="interval_3h">3 小时</string>
+    <string name="interval_6h">6 小时</string>
+    <string name="interval_12h">12 小时</string>
+    <string name="interval_24h">24 小时</string>
+
+    <string name="btn_add_widget">添加桌面小部件</string>
+    <string name="btn_widget_settings">小部件设置</string>
+    <string name="widget_tap_hint">单击小部件即可刷新余额</string>
+    <string name="msg_pin_unsupported">当前桌面不支持请求添加，请手动长按桌面添加</string>
+    <string name="msg_pin_requested">请在桌面弹出的提示中确认添加</string>
+
+    <string name="footer_note">API Key 仅保存在本机（SharedPreferences），余额通过 DeepSeek 官方接口 /user/balance 查询。</string>
+</resources>

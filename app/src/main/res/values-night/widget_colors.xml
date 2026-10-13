@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== 小部件配色（深色） ===== -->
+    <color name="widget_bg_frosted">#B31C1B1F</color>
+    <color name="widget_bg_solid">#1F3DAB</color>
+
+    <color name="widget_text_primary">#E3E2E6</color>
+    <color name="widget_text_secondary">#B8BAC2</color>
+    <color name="widget_on_solid_primary">#DDE1FF</color>
+    <color name="widget_on_solid_secondary">#BFC8FF</color>
+</resources>

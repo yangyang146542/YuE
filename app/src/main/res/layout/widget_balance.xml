@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  小部件布局。只用 RemoteViews 支持的框架控件。
+  整块部件可点击（单击 = 手动刷新），因此不再放任何按钮。
+  背景由代码按风格/颜色/圆角绘制成圆角位图后，贴到 widgetBg 上。
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+      背景面板内缩 8dp：Android 12+ 的桌面会把 Widget 强制裁剪成系统圆角，面板贴边时
+      用户设的小圆角会被系统裁剪覆盖掉。内缩后圆角落在裁剪区之内，用户设置才能如实生效。
+      位图宽高比必须与这里的内缩后尺寸一致，否则 fitXY 会把圆角拉成椭圆。
+    -->
+    <ImageView
+        android:id="@+id/widgetBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/widgetTextArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widgetLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/widget_label"
+            android:textColor="@color/widget_text_primary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/widgetBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:text="@string/value_placeholder"
+            android:textColor="@color/widget_text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widgetUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/widget_text_secondary"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!--
+      图片轮播框。位置（距右边界 / 上边界）与宽高都由代码通过
+      RemoteViews.setViewLayoutWidth/Height/Margin 动态设定（API 31+），这里只给默认值。
+      边框是叠在图片之上的一层：位图中间透明、只画圆角描边。
+    -->
+    <FrameLayout
+        android:id="@+id/imageBox"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="top|end"
+        android:visibility="gone">
+
+        <AdapterViewFlipper
+            android:id="@+id/carousel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageBoxBorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+</FrameLayout>

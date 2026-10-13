@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DeepSeek 品牌配色（浅色）。Android 12+ 会被 Material You 动态取色覆盖。 -->
+    <color name="brand_primary">#4D6BFE</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_primary_container">#DDE1FF</color>
+    <color name="brand_on_primary_container">#00105C</color>
+
+    <color name="ic_launcher_background">#FFFFFF</color>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 轮播的每一帧：只有一个 ImageView。位图在工厂里已经变换成正好等于框的像素尺寸，
+     所以这里用 fitXY 就是 1:1 渲染，不会再被拉伸。 -->
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/carouselImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@null"
+    android:scaleType="fitXY" />

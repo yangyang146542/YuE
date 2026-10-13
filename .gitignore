@@ -1,0 +1,23 @@
+# ---- 构建产物 ----
+build/
+.gradle/
+.kotlin/
+*.apk
+*.aab
+*.ap_
+*.dex
+release/
+
+# ---- IDE / 本机配置 ----
+.idea/
+*.iml
+*.hprof
+local.properties
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+
+# ---- 调试临时文件 ----
+*.log
+captures/

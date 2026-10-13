@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Material 3 主题。基础的 seed 配色定义在 @color/brand_*，
+      Android 12+ 运行时由 DynamicColors 覆盖成跟随壁纸的 Material You 取色，
+      Android 11（minSdk 30）则使用下面的 seed 配色。
+    -->
+    <style name="Theme.DeepSeekBalance" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/brand_on_primary</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/brand_on_primary_container</item>
+
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">@bool/light_status_bar</item>
+    </style>
+</resources>
