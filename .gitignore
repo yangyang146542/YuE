@@ -21,3 +21,6 @@ Thumbs.db
 # ---- 调试临时文件 ----
 *.log
 captures/
+
+# ---- 发布产物：dist/ 下的 APK 要保留，方便直接下载 ----
+!dist/*.apk
